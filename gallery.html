@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aiman Huzaifi | Personal Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+div {
+    cursor:copy;
+}
+
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;>
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+</style>
+
+</head>
+
+<body>
+<body class="w3-black">
+<body background="img/back.gif">
+
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-animate-left">
+  <!-- Avatar image in top left corner -->
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-green">
+    <i class="fa fa-home w3-medium"></i>
+    <p>Home</p>
+  </a>
+  <a href="biodata.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-black">
+    <p>Biodata</p>
+  </a>
+  <a href="summary.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-black">
+    <p>Summary</p>
+  </a>  <a href="objectives.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-green">
+    <p>Objectives</p>
+  </a>  <a href="educations.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-black">
+    <p>Educations</p>
+  </a>  <a href="extras.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-green">
+    <p>Extras</p>
+  </a>
+  <a href="experiences.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-black">
+    <p>Experiences</p>
+  </a>  <a href="skills.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-green">
+    <p>Skills</p>
+  </a>  <a href="achievements.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-black">
+    <p>Achievements</p>
+  </a>
+  <a href="references.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-green">
+    <p>References</p>
+  </a>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-padding-medium w3-dark-grey">
+    <p>Gallery</p>
+  </a>
+  <a href="family.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-green">
+    <p>Family</p>
+  </a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-green">
+    
+    <p>Contact</p>
+
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="summary.html" class="w3-bar-item w3-button" style="width:25% !important">SUMMARY</a>
+    <a href="educations.html" class="w3-bar-item w3-button" style="width:25% !important">EDUCATION</a>
+    <a href="contact.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+<p>The navigation bar is not fully displayed on smartphone. Rotate your smartphone or go to the bottom of the page to switch the pages.<p>
+  </div>
+</div>
+
+<!-- Gallery Section -->
+  <div class="w3-padding-64 w3-content w3-text-light-grey w3-animate-zoom" id="gallery">
+  	<center><a href="img/uitm.gif"><img src="img/uitm.gif" title="Click to enlarge image" /></a></center>
+    <h2 class="w3-text-light-grey">My Gallery</h2>
+    <hr style="width:200px" class="w3-opacity"></center>
+	
+      <div style="text-align:center">
+        <p style="font-size:12px">Click on the images to preview</p></font>
+
+
+          <img src="img/gallery/1.jpg" alt="My Diploma friends." style="width:10%" onclick="myFunction(this);">
+          <img src="img/gallery/2.jpg" alt="My classmates." style="width:10%" onclick="myFunction(this);">
+          <img src="img/gallery/3.jpg" alt="My friends. " style="width:10%" onclick="myFunction(this);">
+          <img src="img/gallery/4.jpg" alt="Me and my friends playing skateboard." style="width:10%" onclick="myFunction(this);">          
+          <img src="img/gallery/5.jpg" alt="Futsal's team." style="width:10%" onclick="myFunction(this);">
+          <img src="img/gallery/6.jpg" alt="At UiTM Dungun." style="width:10%" onclick="myFunction(this);">
+          <img src="img/gallery/7.jpg" alt="Rugby tournament." style="width:10%" onclick="myFunction(this);">         
+          <img src="img/gallery/8.jpg" alt="My friends." style="width:10%" onclick="myFunction(this);">
+
+        
+      </div>
+      
+		<center><div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:50%">
+        <div id="imgtext"></div>
+      </div>
+      
+      <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+      </script>
+	  </center>
+	
+<!-- End Gallery Section -->
+
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <center>
+	<a href="https://www.facebook.com/aimanhuzaifii/" target="_blank" class="w3-hover-text-green"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+	<a href="https://www.instagram.com/aimanhuzaifi_/" target="_blank" class="w3-hover-text-green"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.pinterest.com/bobnyenz" target="_blank" class="w3-hover-text-green"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/wan-aiman-huzaifi-wan-nasir-39098911b/" target="_blank" class="w3-hover-text-green"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+	<p class="w3-medium"><i class="fa fa-phone"></i>&ensp; +(60)142990078 &emsp;<i class="fa fa-envelope"></i>&nbsp;&nbsp;aimanhuzaifi@gmail.com &emsp;<i class="fa fa-map-marker"></i>&ensp;Kota Bharu, Kelantan, Malaysia</p>
+	<p class="w3-medium">Copyright© 2022 by Aiman Huzaifi. All Rights Reserved. <br>Recommended browser using chrome version 50.0 above with resolution 1280 x 768 and above. <br>This site for assignment purpose only.</br></p>
+	<iframe src="https://free.timeanddate.com/clock/i8ed7vwk/n5090/tlmy/fcfff/tct/pct/tt0/tw0/tm1/tb4" frameborder="0" width="83" height="34" allowtransparency="true"></iframe>
+
+  <footer class="w3-medium">
+  <audio id="myAudio" autoplay="true" loop="true">
+    <source src="music/10.mp3" type="audio/mp3">
+  </audio>
+  <button onclick="playAudio()" type="button">Play</button>
+  <button onclick="pauseAudio()" type="button">Pause</button> 
+  <p><i>Song name: Ed Sheeran - Perfect </i></p>
+  
+  <script>
+  var x = document.getElementById("myAudio"); 
+  
+  function playAudio() { 
+    x.play(); 
+  } 
+  
+  function pauseAudio() { 
+    x.pause(); 
+  } 
+  </script>
+</center>
+	</footer>
+ <!-- End footer -->
+ 
+    <center>
+	<button><a href="references.html" class="previous">&laquo; Previous Page</a></button>
+	<button><a href="family.html" class="next">Next Page &raquo;</a></button>
+	</button></center>
+<br><marquee behavior="alternate"> Do it now! Sometimes later becomes never. </marquee></br>
+<!-- END PAGE CONTENT -->
+</div>
+</body>
+</html>
